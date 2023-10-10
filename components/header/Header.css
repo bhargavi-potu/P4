@@ -1,0 +1,63 @@
+/* Header Styles */
+.header {
+  background: linear-gradient(to right, #333, #555);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  font-family: "Arial", sans-serif;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-logo img {
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.header-title h1 {
+  font-size: 32px;
+  margin: 0;
+  animation: nameAnimation 1s infinite alternate;
+  font-family: "Times New Roman", serif;
+  font-style: italic;
+}
+
+@keyframes nameAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+.header-title p {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.header-links {
+  display: flex;
+  gap: 20px;
+}
+
+.header-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+  font-family: "Arial", sans-serif;
+}
+
+.header-links a:hover {
+  color: #ff6b52;
+}
